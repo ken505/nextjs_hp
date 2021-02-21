@@ -33,13 +33,21 @@ const Contact = () => {
           />
         </div>
 
-        <div className="mt-4">
-          <p className="font-bold">Address</p>
-          <p className="text-xs mt-2 text-gray-600">Hyogo Japan</p>
-          <p className="font-bold mt-3">E-mail</p>
-          <p className="text-xs mt-2 text-gray-600">abc@gmail.com</p>
-          {/* <p className="font-bold mt-3">Phone</p>
+        {/* default 値 */}
+        {/* <div className="mt-4"> */}
+        <div className="mt-6 flex justify-around">
+          <div>
+            {/* default */}
+            {/* <p className="font-bold">Address</p> */}
+            <p className="font-bold mt-3">Address</p>
+            <p className="text-xs mt-2 text-gray-600">Hyogo Japan</p>
+          </div>
+          <div>
+            <p className="font-bold mt-3">E-mail</p>
+            <p className="text-xs mt-2 text-gray-600">abc@gmail.com</p>
+            {/* <p className="font-bold mt-3">Phone</p>
           <p className="text-xs mt-2 text-gray-600">000-123-456</p> */}
+          </div>
         </div>
       </div>
       {/* 各アイテムを均等に配置し、各アイテムの両側に半分の大きさの間隔を置く */}
@@ -59,8 +67,8 @@ const Contact = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* hover したら title が出る */}
-              <title>Zenn icon</title>
+              {/* hover したら title が出るけど・・いる？？ */}
+              {/* <title>Zenn icon</title> */}
               <path d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z" />
             </svg>
           </a>
