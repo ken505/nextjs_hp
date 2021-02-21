@@ -1,27 +1,16 @@
-import Head from 'next/head'
+// Layout をインポートし、 p タグをインポートした Layout タグで囲み、スタイリングする。
 
+import Layout from "../components/Layout";
+
+// Home の名前で export
 export default function Home() {
   return (
 
-    // 中央寄せ css style の置換。 Home.module.css .container => tailwind
-    <div className="min-h-screen py-0 px-2 flex flex-col justify-center items-center">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    // ホーム画面のタブタイトル
+    <Layout title="Ken's Home">
 
-      <h1>Hello Next.js</h1>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer> */}
-    </div>
-  )
+    {/* ホーム画面のテキスト */}
+      <p className="text-4xl">Welcome to Ken's room</p>
+    </Layout>
+  );
 }
