@@ -12,13 +12,14 @@ import { getAllPostsData } from "../lib/posts";
 // Post コンポーネントに、 post id と object をわたす。
 const Blog = ({ posts }) => {
   return (
+    // JSONPlaceholder
     <Layout title="Blog">
       <ul className="m-10">
         {posts && posts.map((post) => <Post key={post.id} post={post} />)}
       </ul>
     </Layout>
   );
-}
+};
 
 export default Blog;
 
