@@ -78,7 +78,7 @@ const Contact = () => {
         <div>
           {/* svg 画像を a タグで囲い、別タグでリンクへ飛ばす処理。 */}
           <a
-            href="https://twitter.com/ken_main_js"
+            href="https://twitter.com/ken_tsx"
             target="_blank"
             rel="noopener noreferrer"
           >
