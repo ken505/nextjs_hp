@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 // width heightを指定しても縦横比を維持したまま自動でレスポンシブ対応。
 import Image from "next/image";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <Layout title="Contact">
       Contact page
@@ -172,6 +172,4 @@ const Contact = () => {
       </div>
     </Layout>
   );
-};
-
-export default Contact;
+}

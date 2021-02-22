@@ -10,7 +10,7 @@ import { getAllPostsData } from "../lib/posts";
 // 受け取った posts のデータを map で展開して、一覧を取得。
 // post が存在する場合 ( && ) 、map で一つづつ展開し、
 // Post コンポーネントに、 post id と object をわたす。
-const Blog = ({ posts }) => {
+export default function Blog({ posts }) {
   return (
     // JSONPlaceholder
     <Layout title="Blog">
@@ -19,9 +19,7 @@ const Blog = ({ posts }) => {
       </ul>
     </Layout>
   );
-};
-
-export default Blog;
+}
 
 // SSG build 時に、getAllPostData を実行し、API からデータを取得。
 // build 時に、サーバーサイドで１回だけ実行される処理。
